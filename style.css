@@ -1,0 +1,142 @@
+body {
+  background-color: bisque;
+}
+.container {
+  margin: 20px auto;
+  width: 1000px;
+}
+.row {
+  display: flex;
+}
+hr {
+  border: 1px solid rgb(0, 183, 255);
+}
+.game-info {
+  display: flex;
+}
+.game-info .game-name {
+  flex: 1;
+}
+.game-info .category {
+  flex: 1;
+  text-align: right;
+}
+.game-info .category span {
+  text-transform: capitalize;
+  color: blueviolet;
+  font-weight: bold;
+}
+.hangman-draw {
+  flex: 1;
+  background-color: brown;
+  padding: 20px;
+  height: 324px;
+}
+.hangman-draw .the-draw {
+  width: 60px;
+  height: 280px;
+  border-bottom: 6px solid greenyellow;
+  position: relative;
+  margin: auto;
+}
+.hangman-draw .the-stand {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: fuchsia;
+  height: 100%;
+  left: 50%;
+  margin-left: -2px;
+}
+.hangman-draw .the-hang:before {
+  content: '';
+  position: absolute;
+  height: 6px;
+  background-color: forestgreen;
+  width: 100px;
+  left: 30px;
+  top: 18px;
+}
+.hangman-draw .the-hang:after {
+  content: '';
+  position: absolute;
+  background-color: rgb(255, 255, 0);
+  width: 6px;
+  height: 40px;
+  left: 130px;
+  top: 50;
+}
+.hangman-draw .the-hangMan .head {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 6px solid black;
+  position: absolute;
+  left: 104px;
+  top: 56px;
+}
+.hangman-draw .the-hangMan .body {
+  position: absolute;
+  background-color: black;
+  width: 6px;
+  height: 110px;
+  top: 120px;
+  left: 130px;
+}
+.hangman-draw .the-rope {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  position: absolute;
+  left: 94px;
+  top: 45px;
+  border: 6px dashed floralwhite;
+}
+.hangman-draw .the-hangMan .arm1::before {
+}
+.hangman-draw .the-hangMan .arm1::after {
+  content: '';
+  position: absolute;
+  background-color: darkblue;
+  width: 53px;
+  height: 6px;
+  top: 150px;
+  left: 135px;
+  transform: rotate(-30deg);
+}
+.hangman-draw .the-hangMan .arm2 {
+}
+.hangman-draw .the-hangMan .arm2 {
+  content: '';
+  position: absolute;
+  background-color: darkorange;
+  width: 50px;
+  height: 6px;
+  top: 150px;
+  left: 80px;
+  transform: rotate(30deg);
+}
+.hangman-draw .the-hangMan .leg2 {
+}
+.hangman-draw .the-hangMan .leg2 {
+  content: '';
+  position: absolute;
+  background-color: darkorange;
+  width: 50px;
+  height: 6px;
+  top: 240px;
+  left: 78px;
+  transform: rotate(150deg);
+}
+.hangman-draw .the-hangMan .leg1 {
+}
+.hangman-draw .the-hangMan .leg1 {
+  content: '';
+  position: absolute;
+  background-color: darkblue;
+  width: 50px;
+  height: 6px;
+  top: 240px;
+  left: 135px;
+  transform: rotate(210deg);
+}
